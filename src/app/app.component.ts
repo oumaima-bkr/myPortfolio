@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  activerNavBar:boolean=true
+  activerSocialNavBar:boolean=true
+
+  activated(){
+    this.activerNavBar=true
+    this.activerSocialNavBar=true
+  }
 }
