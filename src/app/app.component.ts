@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  activerNavBar:boolean=true
-  activerSocialNavBar:boolean=true
+  activerNavBar:boolean=false
+  activerSocialNavBar:boolean=false
 
   activated(){
     this.activerNavBar=true

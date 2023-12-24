@@ -9,6 +9,7 @@ import { Projects } from './components/projects/projects.component';
 import { Resume } from './components/resume/resume.component';
 import { Contact } from './components/contact/contact.component';
 import { Skill } from './components/skills/skill/skill.component';
+import { OneProjet } from './components/projects/projet/projet.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Skill } from './components/skills/skill/skill.component';
     Projects,
     Resume,
     Contact,
-    Skill
+    Skill,
+    OneProjet
   
   ],
   imports: [

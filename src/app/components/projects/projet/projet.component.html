@@ -1,0 +1,23 @@
+<div class="project-container">
+
+    <img [src]="projet.imageLink" class="image-container" alt="Portfolio Image">
+    <hr class="ligne">
+    <div class="title-container">
+        <p>{{projet.titre}}</p>
+    </div>
+    <div class="descreption-container">
+        <p>{{projet.descreption}}</p>
+    </div>
+
+
+    <div class="more-infos">
+        <a [href]="projet.youtubeLink" target="_blank" *ngIf="showYoutube"><i class="fa-brands fa-youtube"></i></a>
+        <a [href]="projet.githublink" target="_blank" *ngIf="showGithub"><i class="fa-brands fa-github"></i></a>
+        <i class="fa-solid fa-check" *ngIf="isFinished else isNot"></i>
+        <ng-template #isNot> <i class="fa-solid fa-spinner"></i>
+        </ng-template>
+    </div>
+
+</div>
+
+

@@ -93,6 +93,7 @@
 .vertical-navSocial {
     width: 200px;
     margin-bottom: 70%;
+    
 }
 
 .vertical-navSocial ul {
@@ -125,12 +126,11 @@
 }
 
 
-
 .sideBar-container::after {
     content: '';
     background-color: #191917;
     width: 2px;
-    height: 90px; /* Adjust the height as needed */
+    height: 90px; 
     position: absolute;
     bottom:  0;
     left: 50%;
@@ -138,6 +138,6 @@
 }
 
 .sideBar-container::after {
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 10px; 
 }
-
+ 
