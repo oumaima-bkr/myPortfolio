@@ -10,6 +10,7 @@ import { Resume } from './components/resume/resume.component';
 import { Contact } from './components/contact/contact.component';
 import { Skill } from './components/skills/skill/skill.component';
 import { OneProjet } from './components/projects/projet/projet.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { OneProjet } from './components/projects/projet/projet.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

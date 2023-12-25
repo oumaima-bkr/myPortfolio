@@ -7,27 +7,29 @@
                 discuss collaboration,
                 I'd love to hear from you. Please feel free to reach out using the contact information below: </p>
         </div>
-        <form class="input-container">
+        <form class="input-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
 
             <div class="pair-container">
             <label for="">Email :</label>
-            <input type="email" required>
+            <input type="email" formControlName="email">
             </div>
 
 
             <div class="pair-container">
             <label for="">Subject :</label>
-            <input type="text">
+            <input type="text" formControlName="subject">
             </div>
 
 
 
             <div class="pair-container">
                 <label for="">Content: </label>
-                <textarea class="content-input" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <textarea class="content-input" name="subject" placeholder="Write something.." style="height:170px" formControlName="content"></textarea>
             </div>
 
+
+            <button type="submit">Submit</button>
 
 
         </form>
